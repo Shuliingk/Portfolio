@@ -2,9 +2,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Timothe Imbert</title>
 </head>
 <body>
-    <h1>JE SUIS TIMOTHE</h1>
+    <!-- TITLE -->
+    <header id="header">
+        <div>
+            <p id="top_title">Hello, je suis</p>
+            <h1>TIMOTHE IMBERT</h1>
+            <p id="bottom_title">Développeur de Jeux Vidéo</p>
+        </div>
+    </header>
+
+    <!-- NAVBAR-->
+    <nav id="navbar">
+        <ul>
+            <div class="nav_element" id="nav_element_1">
+                <p class="nav_numbers">01</p>
+                <li><a href="#section1">// qui suis-je</a></li>
+            </div>
+            <div class="nav_element" id="nav_element_2">
+                <p class="nav_numbers">02</p>
+                <li><a href="#section2">// mes projets</a></li>
+            </div>
+            <div class="nav_element" id="nav_element_3">
+                <p class="nav_numbers">03</p>
+                <li><a href="#section3">// contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    
+    <!-- ABOUT ME -->
+
+    <div id="about_me"> 
+        <h2>Qui suis-je ?</h2>
+        <div id="section_1">
+            <div id="photo">
+                <img src="Art/photo.png">
+            </div>
+            <div id="competences">
+                <h3>Mes Compétences</h3>
+                <div id="competences_list">
+                    <p class="comp">Unity</p>
+                    <p class="comp">C#</p>
+                    <p class="comp">Blender</p>
+                    <p class="comp">C</p>
+                    <p class="comp">Unreal Engine</p>
+                    <p class="comp">C++</p>
+                    <p class="comp">HTML</p>
+                    <p class="comp">CSS</p>
+                </div>
+            </div>
+        </div>
+        <div id="section_2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore repellat nesciunt, vitae reiciendis itaque ex at eligendi, fugiat consectetur autem nobis doloremque vero qui! Labore consequatur laborum reprehenderit dolorem.</p>
+            <button id="CV_button">Téléchargez mon CV</button>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h2>Mes Projets</h2>
+        <p>Filtrer par </p>
+        <nav>
+            <li><a href="">Tous</a></li>
+        </nav>
+    </div>
+
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
