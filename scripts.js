@@ -74,8 +74,23 @@ window.addEventListener("resize", adjustBackPosition);
 window.addEventListener("load", adjustBackPosition);
 
 function adjustBackPosition() {
-    let backElement = document.getElementById("back");
-    let backHeight = backElement.offsetHeight; // Récupère la hauteur de #back
+  let backElement = document.getElementById("back");
+  let backHeight = backElement.offsetHeight; // Récupère la hauteur de #back
 
-    backElement.style.marginTop = `-${backHeight}px`; // Positionne #back une hauteur au-dessus
+  backElement.style.marginTop = `-${backHeight}px`; // Positionne #back une hauteur au-dessus
+
+}
+
+
+window.addEventListener("resize", checkScreenSize);
+window.addEventListener("load", checkScreenSize);
+
+function checkScreenSize() {
+    let backElement = document.getElementById("back");
+
+    if (window.innerWidth <= 1080) {
+        backElement.classList.add("hidden"); // Ajoute la classe hidden
+    } else {
+        backElement.classList.remove("hidden"); // Supprime la classe hidden
+    }
 }

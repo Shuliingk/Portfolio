@@ -112,17 +112,16 @@ body {
     
     #header #title h1 {
         width: fit-content;
-        font-size: 60px;
+        font-size: 55px;
         font-family: 'Poppins', sans-serif;
         font-weight: 700; /* Bold */
         margin-top: 0;
         margin-bottom: 0;
-        
     }
 
 
     #header #title p {
-        font-size: 32px;
+        font-size: 26px;
         margin: 0;
     }
 
@@ -132,7 +131,7 @@ body {
     }
 
     #header #title #bottom_title_capsule {
-        margin-right: 0;
+        text-align: end;
     }    
 }
 
@@ -261,75 +260,164 @@ header #icons a:hover  {
 
 #about_me {
     margin-top: 100px;
-    width: 60vw; 
-    margin-left: 20vw;
 }
 
-#about_me h2 {
-    font-size: 42px;
-    max-width: fit-content;
-    margin-top: 160px;
-    margin-left: 2vw;
-}
 
-#about_me #section_1 {
-    display: flex;
-    align-items: center;
-
-}
-
-#about_me #section_1 #photo{
-    width: 40vw;
-}
 
 #about_me #section_1 #photo img{
     margin-top: 30px;
 }
 
+@media screen and (min-width: 1080px) {
+    #about_me h2 {
+        font-size: 42px;
+        max-width: fit-content;
+        margin-top: 160px;
+        text-align: center;
+    }
+
+    #about_me #section_1 {
+        display: flex;
+        align-items: center;
+
+    }
+
+    #about_me #section_1 #photo{
+        width: 40vw;
+    }
+    
+    
+    #about_me {
+        width: 60vw; 
+        margin-left: 20vw;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    #about_me h2 {
+        font-size: 42px;
+        margin-top: 160px;
+        text-align: center;
+    }
+    #about_me #section_1 {
+        width: 90vw;
+        margin-left: 5vw;
+
+    }
+    #about_me #section_1 #photo{
+        max-width: fit-content;
+        width: 90vw;
+        text-align: center;
+    }
+}
+
 /* Competence */
 
-#about_me #competences h3 {
-    font-size: 38px;
-    margin-left: 3vw;
-    font-weight: 500;
+@media screen and (min-width: 1080px) {
+    #about_me #competences h3 {
+        font-size: 38px;
+        margin-left: 3vw;
+        font-weight: 500;
+    }
+    
+    #about_me #competences #competences_list .comp {
+        background-color: var(--DarkGreen);
+        font-size: 26px;
+        width: fit-content;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+        margin: 0; 
+    }
+
+    #about_me #competences #competences_list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 28px 34px;
+    }
+
+
+
+
+    #about_me #section_1 #competences{
+        width: 40vw;
+    }
+
 }
 
-#about_me #competences #competences_list .comp {
-    background-color: var(--DarkGreen);
-    font-size: 26px;
-    width: fit-content;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 30px;
-    margin: 0; 
+@media screen and (max-width: 1080px) {
+    #about_me #competences h3 {
+        font-size: 38px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    #about_me #competences #competences_list .comp {
+        background-color: var(--DarkGreen);
+        font-size: 26px;
+        width: fit-content;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+        margin: 0; 
+    }
+
+    #about_me #competences #competences_list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 28px 34px;
+    }
+
 }
 
-#about_me #competences #competences_list {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 28px 34px;
-}
 
 
-
-
-#about_me #section_1 #competences{
-    width: 40vw;
-}
 
 /**/
 
-#about_me #section_2 {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
+
+@media screen and (min-width: 1080px) {
+    #about_me #section_2 {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    #about_me #section_2 #presentation {
+        width: 31vw;
+    }
+    
+    
+    
+    #about_me #section_2 #button {
+        width: 29vw;
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
-#about_me #section_2 #presentation {
-    width: 31vw;
+@media screen and (max-width: 1080px) {
+    #about_me #section_2 {
+        margin-top: 80px;
+        width: 90vw;
+        margin-left:5vw;
+    }
+
+    #about_me #section_2 #button {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
 }
+
+
+
 
 #about_me #section_2 p {
     text-align: justify;
@@ -352,6 +440,7 @@ header #icons a:hover  {
     padding-left: 24px;
     padding-right: 24px;
 }
+
 #about_me #section_2 button:hover {
     background-color: var(--DarkGreen);
     transition-duration: 0.2s;
@@ -361,20 +450,10 @@ header #icons a:hover  {
 
 
 
-#about_me #section_2 #button {
-    width: 29vw;
-    display: flex;
-    justify-content: center;
-}
-
 
 
 /** ----------------------------------- PROJECTS ------------------------------------- **/
 
-#projects {
-    width: 60vw;
-    margin-left: 20vw;
-}
 
 #projects h2 {
     font-size: 42px;
@@ -385,65 +464,9 @@ header #icons a:hover  {
     font-weight: 700;
 }
 
-#projects #nav_projects {
-    display: flex;
-}
-
-#projects #nav_projects .nav_element button {
-    margin-top: 0;
-    margin-bottom: 0;
-    border-style: none;
-    background-color: transparent;
-    color: var(--White);
-    font-family: 'Poppins', Arial, sans-serif;
-    font-size: 30px;
-    
-}
-
 #projects #nav_projects .nav_element .active {
     color: var(--Brown);
-    
 }
-
-
-#projects #nav_projects #filter {
-    margin-left: 3vw;
-    margin-right: 18px;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 30px;
-}
-#projects #nav_projects .nav_element{
-    display: flex;
-    font-size: 30px;
-}
-
-
-#projects #nav_projects div{
-    margin-top: -6px;
-}
-
-
-
-#projects #nav_projects .nav_element .separation {
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: right;
-    margin-right: 18px;
-    margin-left: 18px;
-}
-
-#projects #nav_projects .nav_numbers {
-    font-size: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-bottom: 0;
-    margin-right: 0;
-    text-align: right;
-    margin-bottom: -10px;
-    margin-right: 48px;
-}
-
 
 
 #projects #nav_projects .nav_element button:hover {
@@ -451,6 +474,116 @@ header #icons a:hover  {
     color: var(--Brown);
     cursor: pointer;
 }
+
+@media screen and (min-width: 1080px) {
+    #projects {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+    
+    #projects #nav_projects .nav_element button {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-style: none;
+        background-color: transparent;
+        color: var(--White);
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 30px;
+        
+    }
+
+    #projects #nav_projects #filter {
+        margin-left: 3vw;
+        margin-right: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    #projects #nav_projects .nav_element{
+        display: flex;
+        font-size: 30px;
+    }
+
+
+    #projects #nav_projects div{
+        margin-top: -6px;
+    }
+
+
+
+    #projects #nav_projects .nav_element .separation {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+
+    #projects #nav_projects .nav_numbers {
+        font-size: 16px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-bottom: 0;
+        margin-right: 0;
+        text-align: right;
+        margin-bottom: -10px;
+        margin-right: 48px;
+    }
+
+
+}
+
+@media screen and (max-width: 1080px) {
+    #projects #nav_projects .nav_element button {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-style: none;
+        background-color: transparent;
+        color: var(--White);
+        font-family: 'Poppins', Arial, sans-serif;
+        font-size: 16px;
+        
+    }
+
+    #projects #nav_projects #filter {
+        margin-left: 3vw;
+        margin-right: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    #projects #nav_projects .nav_element{
+        display: flex;
+        font-size: 16px;
+    }
+
+    #projects #nav_projects .nav_element .separation {
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: right;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    #projects #nav_projects .nav_numbers {
+        font-size: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-bottom: 0;
+        margin-right: 0;
+        text-align: right;
+        margin-bottom: -6px;
+        margin-right: 48px;
+    }
+}
+
+
+#projects #nav_projects {
+    display: flex;
+}
+
 
 @media screen and (min-width: 1080px) {
     #projects #items-container{
@@ -466,10 +599,11 @@ header #icons a:hover  {
 }
 
 @media screen and (max-width: 1080px) {
+    
     #projects #items-container .item{
         width: 90vw;
-        margin-left: 10vw;
         height: 90vw;
+        margin-left: 5vw;
     }
 }
 
@@ -548,6 +682,7 @@ footer {
 footer #container {
     width: 80vw;
     margin-left: 10vw;
+
 }
 
 footer #container div {
