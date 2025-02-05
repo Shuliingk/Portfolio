@@ -1,9 +1,21 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('Fonts/Poppins/Poppins-Black.ttf') format('truetype');
-    font-weight: normal;
+    src: url('Fonts/Poppins/Poppins-bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
-}
+}   
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}   
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}   
 
 :root {
     --White: #FFFFFF;
@@ -13,74 +25,215 @@
     --Brown: #82503E;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 
 body {
     background-color: var(--GreenBackground);
     color: var(--White);
     font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500; 
     width: 100%;
     height: 100%;
     margin-left: 0;
     margin-top: 0;
+    font-size: 16px;
 }
 
 /** -------------------------- Header -------------------------- **/
 #header {
-    background-image: url("Art/Background.png");
-    background-size: cover; /* Remplit le conteneur sans déformer */
-    background-repeat: no-repeat; /* Empêche la répétition */
-    background-position: center; /* Centre l'image */
+    /*background-image: url("Art/Background.png");
+    /*background-size: cover; /* Remplit le conteneur sans déformer */
+    /*background-repeat: no-repeat; /* Empêche la répétition */
+    /*background-position: center; /* Centre l'image */
     width: 100%; /* Prend toute la largeur */
     height: 100vh; /* Hauteur égale à la taille de la fenêtre */
     margin: 0;
     color: white; /* Texte blanc pour contraste */
 }
 
+#header #picture #forest {
+    position: absolute;
+    height: 80vh;
+    margin-top: 50px;
+    z-index: -30;
+}
 
-#header div {
+#header #picture #access {
+    position: absolute;
+    width: 70px;
+    margin-top: 50px;
+    margin-right: 50px;
+    right: 0;
+}
+
+
+
+#header #title {
     width: fit-content;
     margin: 0 auto; 
 }
 
-#header div h1 {
-    width: fit-content;
-    font-size: 3rem;
+
+@media screen and (min-width: 1080px) {
+    
+    #header #title h1 {
+        width: fit-content;
+        font-size: 80px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700; /* Bold */
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+
+
+    #header #title p {
+        font-size: 42px;
+        margin: 0;
+    }
+
+
+
+
+    #header #title #top_title {
+        width: fit-content;
+        padding-top: 30vh;
+    }
+
+    #header #title #bottom_title_capsule {
+        text-align: end;
+    }    
+}
+
+@media screen and (max-width: 1080px) {
+    
+    #header #title h1 {
+        width: fit-content;
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700; /* Bold */
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+
+
+    #header #title p {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    #header #title #top_title {
+        width: fit-content;
+        padding-top: 30vh;
+    }
+
+    #header #title #bottom_title_capsule {
+        margin-right: 0;
+    }    
+}
+
+#back {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    z-index: -10;
+}
+
+header #icons {
+    display: flex; /* Active Flexbox */
+    justify-content: flex-end; /* Aligne les éléments à droite */
+    flex-direction: column;
+    align-items: end; /* Centre verticalement */
 }
 
 
-#header div p {
-    width: fit-content;
-    font-size: 1.6rem;
-    margin: 0;
+header #icons a {
+    margin-right: 35px;
+    
 }
 
-#header div #top_title {
-    padding-top: 40vh;
+header #icons a img{
+    width: 100px;
+} 
+
+header #icons #github{
+    margin-bottom: 60px;
+}
+header #icons #linkedin{
+    margin-bottom: 200px;
+}
+
+header #icons a:hover  {
+    transition-duration: 0.2s;
+    filter: invert(45%) sepia(15%) saturate(500%) hue-rotate(30deg);
 }
 
 /** ------------------------------------------------ NAVBAR ------------------------------------------------ **/
 
 #navbar {
-    /*background-color: var(--Brown);*/
-    width: 90vw;
-    margin-top: -76px;
-    margin-left: 5vw;
+    background-color: var(--Brown);
+    margin-top: -110px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
+
+
+@media screen and (min-width: 1080px) {
+    #navbar {
+        padding-left: 10vw;
+        height: 110px;
+    }
+    
+    #navbar ul {
+        font-size: 32px;
+    }
+
+    #navbar .nav_numbers {
+        font-size: 18px;
+        text-align: right;
+        margin-bottom: -10px;
+        margin-right: -6px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #navbar {
+        height: 80px;
+        
+    }
+    
+    #navbar .nav_numbers {
+        font-size: 10px;
+        text-align: right;
+        margin-bottom: -6px;
+        margin-right: -6px;
+    }
+
+    #navbar ul {
+    font-size: 16px;
+    height: 100%;
+    }
+
+    #navbar ul div {
+        margin-top: -10px;
+    }
+
+}
+
 
 #navbar ul {
     display: flex;
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
 }
 
 
-.nav_numbers {
-    font-size: 12px;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: right;
-    margin-bottom: -6px;
-    margin-right: -6px;
-}
 
 #nav_element_2, #nav_element_3 {
     margin-left: 40px;
@@ -90,21 +243,33 @@ body {
     color: var(--White);
     text-decoration: none;
 }
+#navbar ul div li a:hover {
+    transition-duration: 0.2s;
+    color: var(--LightGreen);
+}
+
+.sticky {
+    position: fixed;
+    top: 110;
+    left: 0;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 /** ------------------------------------------------ About me ------------------------------------------------ **/
 
 #about_me {
     margin-top: 100px;
-    width: 80vw; 
-    margin-left: 10vw;
+    width: 60vw; 
+    margin-left: 20vw;
 }
 
 #about_me h2 {
     font-size: 42px;
     max-width: fit-content;
     margin-top: 160px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2vw;
 }
 
 #about_me #section_1 {
@@ -118,21 +283,20 @@ body {
 }
 
 #about_me #section_1 #photo img{
-    margin-left: 7vw;
-    width: 26vw;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-/* Compotence */
+/* Competence */
 
 #about_me #competences h3 {
     font-size: 38px;
-    margin-left: 2vw;
+    margin-left: 3vw;
+    font-weight: 500;
 }
 
 #about_me #competences #competences_list .comp {
     background-color: var(--DarkGreen);
-    font-size: 24px;
+    font-size: 26px;
     width: fit-content;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -141,10 +305,11 @@ body {
     border-radius: 30px;
     margin: 0; 
 }
+
 #about_me #competences #competences_list {
     display: flex;
     flex-flow: row wrap;
-    gap: 14px
+    gap: 28px 34px;
 }
 
 
@@ -162,10 +327,12 @@ body {
     align-items: center;
 }
 
+#about_me #section_2 #presentation {
+    width: 31vw;
+}
+
 #about_me #section_2 p {
-    width: 30vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    text-align: justify;
 }
 
 #about_me #section_2 button {
@@ -177,15 +344,28 @@ body {
     margin-left: auto;
     margin-right: auto;
     
-    font-size: 33px;
+    font-size: 26px;
     color: var(--White);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 26px;
+    padding-bottom: 26px;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+#about_me #section_2 button:hover {
+    background-color: var(--DarkGreen);
+    transition-duration: 0.2s;
+    cursor: pointer;
 }
 
+
+
+
+#about_me #section_2 #button {
+    width: 29vw;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -202,42 +382,99 @@ body {
     margin-top: 160px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 700;
 }
 
 #projects #nav_projects {
     display: flex;
 }
 
-#projects #nav_projects button {
+#projects #nav_projects .nav_element button {
     margin-top: 0;
     margin-bottom: 0;
     border-style: none;
     background-color: transparent;
     color: var(--White);
     font-family: 'Poppins', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 30px;
+    
 }
 
-#projects #nav_projects p {
-    margin-left: 3vw;
-    font-size: 24px;
-    margin-right: 10px;
+#projects #nav_projects .nav_element .active {
+    color: var(--Brown);
+    
 }
-#projects #nav_projects button:hover {
+
+
+#projects #nav_projects #filter {
+    margin-left: 3vw;
+    margin-right: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+#projects #nav_projects .nav_element{
+    display: flex;
+    font-size: 30px;
+}
+
+
+#projects #nav_projects div{
+    margin-top: -6px;
+}
+
+
+
+#projects #nav_projects .nav_element .separation {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+    margin-right: 18px;
+    margin-left: 18px;
+}
+
+#projects #nav_projects .nav_numbers {
+    font-size: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+    text-align: right;
+    margin-bottom: -10px;
+    margin-right: 48px;
+}
+
+
+
+#projects #nav_projects .nav_element button:hover {
+    transition-duration: 0.2s;
     color: var(--Brown);
     cursor: pointer;
 }
 
-#projects #items-container{
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (min-width: 1080px) {
+    #projects #items-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #projects #items-container .item{
+    width: 28vw;
+    height: 28vw;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #projects #items-container .item{
+        width: 90vw;
+        margin-left: 10vw;
+        height: 90vw;
+    }
 }
 
 #projects #items-container .item{
     background-color: var(--DarkGreen);
-    width: 28vw;
-    margin-left: 1vw;
-    height: 28vw;
     border-radius: 50px;
     margin-top: 50px;
 }
@@ -247,9 +484,7 @@ body {
   }
 
 #projects #items-container .item img{
-    width: 98%;
-    margin-left: 1%;
-    margin-top: 1%;
+    width: 100%;
     border-radius: 45px 45px 0 0;
     height: 70%;
     object-fit: cover
@@ -261,14 +496,16 @@ body {
 
 
 #projects #items-container .item .title{
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 6%;
     font-size: 28px;
+    font-weight: 600;
 }
+
 #projects #items-container .item .desc{
-    margin-left: 10%;
+    margin-left: 8%;
     font-size: 18px;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 
@@ -276,6 +513,70 @@ body {
 
 footer {
     background-color: var(--Brown);
-    height: 400px;
+    height: auto;
     margin-top: 100px;
+    padding-top: 50px;
+}
+
+
+@media screen and (min-width: 1080px) {
+    footer #container {
+        display: flex;
+    }
+
+    
+    footer #container #notes p{
+        margin-top: -50px;
+    }
+    
+    footer #container div {
+    width: 34vw;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    
+    footer #container #notes p{
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+footer #container {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+footer #container div {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 24px;
+}
+
+footer h3 {
+    font-size: 42px;
+    margin-left: 13vw;
+}
+
+footer #container #contact a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+footer #container #contact a:hover {
+    color: var(--LightGreen);
+    transition-duration: 0.2s;
+}
+
+footer #copyright {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer #copyright a{
+    text-decoration: none;
+    color: var(--LightGreen);
 }

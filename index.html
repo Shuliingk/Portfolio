@@ -8,27 +8,43 @@
 <body>
     <!-- TITLE -->
     <header id="header">
-        <div>
+        <div id="picture">
+            <img id="forest" src="Art/Foret 1.png" alt="">
+            <!--<a href=""><img id="access" src="Art/access.png" alt=""></a>-->
+        </div>
+
+
+        <div id="title">
             <p id="top_title">Hello, je suis</p>
-            <h1>TIMOTHE IMBERT</h1>
-            <p id="bottom_title">Développeur de Jeux Vidéo</p>
+            <h1>TIMOTHÉ IMBERT</h1>
+            <div id="bottom_title_capsule">
+                <p id="bottom_title">Développeur de Jeux Vidéo</p>
+            </div>
+        </div>
+        <div id="icons">
+            <a id="github" href="https://github.com/Shuliingk"><img src="Art/git blanc.png" alt=""></a><br>
+            <a id="linkedin" href="https://www.linkedin.com/in/timothé-imbert-b876b7336/"><img src="Art/linkedin blanc.png" alt=""></a>
         </div>
     </header>
 
+          
     <!-- NAVBAR-->
     <nav id="navbar">
+        <img id="back"src="Art\mini montagne.png" alt="">
+         
+ 
         <ul>
             <div class="nav_element" id="nav_element_1">
                 <p class="nav_numbers">01</p>
-                <li><a href="#section1">// qui suis-je</a></li>
+                <li><a class="smooth-scroll" href="#about_me">// qui suis-je</a></li>
             </div>
             <div class="nav_element" id="nav_element_2">
                 <p class="nav_numbers">02</p>
-                <li><a href="#section2">// mes projets</a></li>
+                <li><a class="smooth-scroll" href="#projects">// mes projets</a></li>
             </div>
             <div class="nav_element" id="nav_element_3">
                 <p class="nav_numbers">03</p>
-                <li><a href="#section3">// contact</a></li>
+                <li><a class="smooth-scroll" href="#contact">// contact</a></li>
             </div>
         </ul>
     </nav>
@@ -45,30 +61,62 @@
                 <h3>Mes Compétences</h3>
                 <div id="competences_list">
                     <p class="comp">Unity</p>
+                    <p class="comp">Unreal Engine</p>
                     <p class="comp">C#</p>
                     <p class="comp">Blender</p>
-                    <p class="comp">C</p>
-                    <p class="comp">Unreal Engine</p>
-                    <p class="comp">C++</p>
                     <p class="comp">HTML</p>
+                    <p class="comp">C++</p>
+                    <p class="comp">C</p>
                     <p class="comp">CSS</p>
                 </div>
             </div>
         </div>
         <div id="section_2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore repellat nesciunt, vitae reiciendis itaque ex at eligendi, fugiat consectetur autem nobis doloremque vero qui! Labore consequatur laborum reprehenderit dolorem.</p>
-            <button id="CV_button">Téléchargez mon CV</button>
+            <div id="presentation">
+                <p><b>Étudiant</b> en 3e année d'un Bachelor Programmation Informatique, je vise une carrière de <b>développeur Unity</b>. 
+                    <br><b>Engagé, rigoureux et enthousiaste</b>, j’aime relever des défis en équipe.  
+                    <br><b>Mon objectif ?</b> Évoluer dans un environnement dynamique, apprendre et perfectionner mes compétences. ✨</p>
+            </div>
+            <div id="button">
+                <button id="CV_button">Téléchargez mon CV</button>
+
+            </div>
         </div>
     </div>
 
     <div id="projects">
         <h2>Mes Projets</h2>
         <div id="nav_projects">
-            <p>Filtrer par </p>
-            <button class="filter-btn" data-category="all">Tous</button>
-            <button class="filter-btn" data-category="Unity">Unity</button>
-            <button class="filter-btn" data-category="Unreal Engine">Unreal Engine</button>
-            <button class="filter-btn" data-category="Blender">Blender</button>
+            <p id="filter">Filtrer par </p>
+            <div>
+                <p class="nav_numbers">07</p>
+                <div class="nav_element">
+                    <button class="filter-btn" data-category="all">Tous</button>
+                    <p class="separation"> / </p>
+                </div>
+            </div>
+            <div>
+                <p class="nav_numbers">06</p>
+                <div class="nav_element" > 
+                    <button class="filter-btn" data-category="Unity">Unity</button>
+                    <p class="separation"> / </p>
+                </div>
+            </div>
+            <div>
+                <p class="nav_numbers">00</p>
+                <div class="nav_element" >
+                    <button class="filter-btn" data-category="Unreal Engine">Unreal Engine</button>
+                    <p class="separation"> / </p>
+                </div>
+            </div>
+            <div>
+                <p class="nav_numbers">01</p>
+                <div class="nav_element" >
+                    <button class="filter-btn" data-category="Blender">Blender</button>
+                    <p class="separation">  </p>
+                </div>
+            </div>
+            
         </div>
 
         <div id="items-container">
@@ -98,7 +146,22 @@
     </div>
 
     <footer>
-        
+        <h3>CONTACTEZ-MOI</h3>
+        <div id="container">
+            <div id="contact">
+                <p>timotheimbert54@gmail.com<br>06 26 36 47 95</p>
+                <a href="">Linkedin</a><br>
+                <a href="">GitHub</a>
+            </div>
+            <div id="notes">
+                <p>⚠ Je suis à la recherche d’un stage de 3 mois minimum à partir de Mai 2025. 
+                     [Distanciel ou Présentiel sur Lyon] ⚠<br><br>
+                    N’hésitez pas à me contacter si mon profil vous intéresse ! ✨</p>
+            </div>
+        </div>
+        <div  id="copyright">
+            <p>© 2025 <a class="smooth-scroll" href="#header">Timothé Imbert</a> - All rights reserved</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
