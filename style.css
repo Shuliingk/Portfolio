@@ -63,7 +63,7 @@ body {
 #navbar {
     /*background-color: var(--Brown);*/
     width: 90vw;
-    margin-top: -100px;
+    margin-top: -76px;
     margin-left: 5vw;
 }
 
@@ -101,6 +101,10 @@ body {
 
 #about_me h2 {
     font-size: 42px;
+    max-width: fit-content;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #about_me #section_1 {
@@ -180,4 +184,98 @@ body {
 
     padding-left: 30px;
     padding-right: 30px;
+}
+
+
+
+
+/** ----------------------------------- PROJECTS ------------------------------------- **/
+
+#projects {
+    width: 60vw;
+    margin-left: 20vw;
+}
+
+#projects h2 {
+    font-size: 42px;
+    max-width: fit-content;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects #nav_projects {
+    display: flex;
+}
+
+#projects #nav_projects button {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-style: none;
+    background-color: transparent;
+    color: var(--White);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 24px;
+}
+
+#projects #nav_projects p {
+    margin-left: 3vw;
+    font-size: 24px;
+    margin-right: 10px;
+}
+#projects #nav_projects button:hover {
+    color: var(--Brown);
+    cursor: pointer;
+}
+
+#projects #items-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projects #items-container .item{
+    background-color: var(--DarkGreen);
+    width: 28vw;
+    margin-left: 1vw;
+    height: 28vw;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+#projects #items-container .item.hidden {
+    display: none;
+  }
+
+#projects #items-container .item img{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 45px 45px 0 0;
+    height: 70%;
+    object-fit: cover
+}
+
+#projects #items-container .item p {
+    margin: 0;
+}
+
+
+#projects #items-container .item .title{
+    margin-left: 10%;
+    margin-top: 6%;
+    font-size: 28px;
+}
+#projects #items-container .item .desc{
+    margin-left: 10%;
+    font-size: 18px;
+    margin-top: 4%;
+}
+
+
+/** ------------------------------------ FOOTER  ------------------------------------ **/
+
+footer {
+    background-color: var(--Brown);
+    height: 400px;
+    margin-top: 100px;
 }

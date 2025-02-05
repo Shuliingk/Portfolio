@@ -63,13 +63,43 @@
 
     <div id="projects">
         <h2>Mes Projets</h2>
-        <p>Filtrer par </p>
-        <nav>
-            <li><a href="">Tous</a></li>
-        </nav>
+        <div id="nav_projects">
+            <p>Filtrer par </p>
+            <button class="filter-btn" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="Unity">Unity</button>
+            <button class="filter-btn" data-category="Unreal Engine">Unreal Engine</button>
+            <button class="filter-btn" data-category="Blender">Blender</button>
+        </div>
+
+        <div id="items-container">
+            <div class="item" data-category="Unity">
+                <img src="Art/Aboveyou_main.png" alt="">
+                <p class="title">Above You!</p>
+                <p class="desc">2D Unity mobile</p>
+            </div>
+
+            <div class="item" data-category="Unity">
+                <img src="Art/FPS_main.png" alt="">
+                <p class="title">FPS Project</p>
+                <p class="desc">Unity 3D</p>
+            </div>
+            
+            <div class="item" data-category="Blender">
+                <img src="Art/blender_main.png" alt="">
+                <p class="title">Blender</p>
+                <p class="desc">3D platformer Map</p>
+            </div>
+            <div class="item" data-category="Unity">
+                <img src="Art/Hidink_main.png" alt="">
+                <p class="title">Hidink</p>
+                <p class="desc">3D FPS Multijoueur</p>
+            </div>
+        </div>
     </div>
 
-
+    <footer>
+        
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
