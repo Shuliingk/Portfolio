@@ -124,7 +124,7 @@ body {
     
     #header #title h1 {
         width: fit-content;
-        font-size: 55px;
+        font-size: 45px;
         font-family: 'Poppins', sans-serif;
         font-weight: 700; /* Bold */
         margin-top: 0;
@@ -133,7 +133,7 @@ body {
 
 
     #header #title p {
-        font-size: 26px;
+        font-size: 22px;
         margin: 0;
     }
 
