@@ -120,7 +120,7 @@ body {
     }    
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 520px) {
     
     #header #title h1 {
         width: fit-content;
