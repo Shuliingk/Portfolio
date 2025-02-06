@@ -29,17 +29,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
   const navbarOriginalPos = navbar.offsetTop; // Position d'origine
 
-  window.addEventListener("scroll", () => {
-      if (window.scrollY > navbarOriginalPos) {
-          navbar.classList.remove("bottom");
-          navbar.classList.add("sticky");
-          document.getElementById("back").style.Top = `-${document.getElementById("back").offsetHeight}px`;
-      } else {
-          navbar.classList.remove("sticky");
-          navbar.classList.add("bottom");
-          document.getElementById("back").style.Top = adjustBackPosition();
+  let backElement = document.getElementById("back");
 
-      }
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > navbarOriginalPos) {
+      navbar.classList.remove("bottom");
+      navbar.classList.add("sticky");
+    if (window.innerWidth >= 1081)
+      backElement.classList.add("hidden"); // Ajoute la classe hidden
+  } else {
+    navbar.classList.remove("sticky");
+    navbar.classList.add("bottom");
+    if (window.innerWidth >= 1081)
+      backElement.classList.remove("hidden"); // Ajoute la classe hidden
+
+  }
   });
 });
 
@@ -92,5 +97,19 @@ function checkScreenSize() {
         backElement.classList.add("hidden"); // Ajoute la classe hidden
     } else {
         backElement.classList.remove("hidden"); // Supprime la classe hidden
+    }
+}
+
+
+window.addEventListener("resize", checkScreenSizeFilter);
+window.addEventListener("load", checkScreenSizeFilter);
+
+function checkScreenSizeFilter() {
+    let filterElement = document.getElementById("filter");
+
+    if (window.innerWidth <= 1512 && window.innerWidth >= 1081 || window.innerWidth <= 570) {
+      filterElement.classList.add("hidden"); // Ajoute la classe hidden
+    } else {
+      filterElement.classList.remove("hidden"); // Supprime la classe hidden
     }
 }

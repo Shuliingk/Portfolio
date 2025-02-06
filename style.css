@@ -69,6 +69,18 @@ body {
     right: 0;
 }
 
+#navbar .hidden {
+    display: none;
+    opacity: 0;;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    
+    
+}
+
 
 
 #header #title {
@@ -77,7 +89,7 @@ body {
 }
 
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1081px) {
     
     #header #title h1 {
         width: fit-content;
@@ -137,16 +149,23 @@ body {
 
 #back {
     position: absolute;
-    width: 100%;
+    width: 1903px;
     right: 0;
     z-index: -10;
 }
 
+
+
+@media screen and (min-width: 1081px)  {
+    
 header #icons {
     display: flex; /* Active Flexbox */
     justify-content: flex-end; /* Aligne les éléments à droite */
     flex-direction: column;
     align-items: end; /* Centre verticalement */
+    position:absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
@@ -163,8 +182,30 @@ header #icons #github{
     margin-bottom: 60px;
 }
 header #icons #linkedin{
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
+
+}
+@media screen and (max-width: 1080px)  {
+    
+    header #icons {
+        position:absolute;
+        top: 0;
+        display: flex;
+        right: 0;
+    }
+    
+    
+    header #icons a {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    header #icons a img{
+        width: 60px;
+    } 
+    
+    }
 
 header #icons a:hover  {
     transition-duration: 0.2s;
@@ -181,7 +222,7 @@ header #icons a:hover  {
 }
 
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1081px) {
     #navbar {
         padding-left: 10vw;
         height: 110px;
@@ -268,7 +309,7 @@ header #icons a:hover  {
     margin-top: 30px;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1301px) {
     #about_me h2 {
         font-size: 42px;
         max-width: fit-content;
@@ -293,7 +334,7 @@ header #icons a:hover  {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1300px) {
 
     #about_me h2 {
         font-size: 42px;
@@ -306,7 +347,6 @@ header #icons a:hover  {
 
     }
     #about_me #section_1 #photo{
-        max-width: fit-content;
         width: 90vw;
         text-align: center;
     }
@@ -314,7 +354,7 @@ header #icons a:hover  {
 
 /* Competence */
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1301px) {
     #about_me #competences h3 {
         font-size: 38px;
         margin-left: 3vw;
@@ -348,7 +388,7 @@ header #icons a:hover  {
 
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1300px) {
     #about_me #competences h3 {
         font-size: 38px;
         text-align: center;
@@ -381,7 +421,7 @@ header #icons a:hover  {
 /**/
 
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1301px) {
     #about_me #section_2 {
         margin-top: 50px;
         display: flex;
@@ -402,7 +442,7 @@ header #icons a:hover  {
 
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1300px) {
     #about_me #section_2 {
         margin-top: 80px;
         width: 90vw;
@@ -475,7 +515,7 @@ header #icons a:hover  {
     cursor: pointer;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1081px) {
     #projects {
         width: 60vw;
         margin-left: 20vw;
@@ -531,6 +571,9 @@ header #icons a:hover  {
         margin-right: 48px;
     }
 
+    #projects #nav_projects div {
+        margin-top: -12px;
+    }
 
 }
 
@@ -543,7 +586,12 @@ header #icons a:hover  {
         color: var(--White);
         font-family: 'Poppins', Arial, sans-serif;
         font-size: 16px;
-        
+        width: auto; /* Ajuste la taille au texte */
+        min-width: unset; /* Empêche une taille minimale imposée */
+        padding: 5px 10px; /* Garde un peu d'espace autour du texte */
+        display: inline-block; /* Assure un bon dimensionnement */
+        text-align: center; /* Centre le texte à l’intérieur */
+        white-space: nowrap; /* Empêche le texte de se casser */
     }
 
     #projects #nav_projects #filter {
@@ -552,11 +600,21 @@ header #icons a:hover  {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 16px;
+        width: auto; /* Ajuste la taille au texte */
+        min-width: unset; /* Empêche une taille minimale imposée */
+        padding: 5px 10px; /* Garde un peu d'espace autour du texte */
+        display: inline-block; /* Assure un bon dimensionnement */
+        text-align: center; /* Centre le texte à l’intérieur */
+        white-space: nowrap; /* Empêche le texte de se casser */
     }
+
+
 
     #projects #nav_projects .nav_element{
         display: flex;
         font-size: 16px;
+        width: fit-content;
+
     }
 
     #projects #nav_projects .nav_element .separation {
@@ -577,11 +635,17 @@ header #icons a:hover  {
         margin-bottom: -6px;
         margin-right: 48px;
     }
+    #projects #nav_projects div {
+        margin-top: -8px;
+    }
 }
+
+
 
 
 #projects #nav_projects {
     display: flex;
+    justify-content: center;
 }
 
 
@@ -593,8 +657,8 @@ header #icons a:hover  {
     }
 
     #projects #items-container .item{
-    width: 28vw;
-    height: 28vw;
+        width: 28vw;
+        height: 28vw;
     }
 }
 
@@ -642,6 +706,10 @@ header #icons a:hover  {
     margin-top: 3%;
 }
 
+#projects #nav_projects .hidden {
+    position: absolute;
+    left: -5000;
+}
 
 /** ------------------------------------ FOOTER  ------------------------------------ **/
 
@@ -668,10 +736,14 @@ footer {
     }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1081px) {
     
     footer #container #notes p{
         margin-top: 50px;
+    }
+
+    footer #container #notes p{
+        font-size: 16px;
     }
 }
 
