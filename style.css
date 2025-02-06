@@ -23,6 +23,7 @@
     --LightGreen: #AAA48F;
     --DarkGreen: #626956;
     --Brown: #82503E;
+    --DarBrown: #3B2A27;
 }
 
 /* html {
@@ -798,6 +799,7 @@ footer #container #contact a:hover {
 footer #copyright {
     margin-top: 50px;
     text-align: center;
+    color: var(--DarBrown);
 }
 
 footer #copyright a{
