@@ -75,14 +75,6 @@ body {
 }
 
 
-
-@media screen and (max-width: 1080px) {
-    
-    
-}
-
-
-
 #header #title {
     width: fit-content;
     margin: 0 auto; 
@@ -120,7 +112,7 @@ body {
     }    
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1080px) {
     
     #header #title h1 {
         width: fit-content;
