@@ -209,9 +209,9 @@ header #icons a:hover  {
 
 #navbar {
     background-color: var(--Brown);
-    margin-top: -110px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    margin-top: -110px;
 }
 
 
@@ -310,7 +310,7 @@ header #icons a:hover  {
     position: fixed;
     top: 110;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background: rgba(51, 51, 51, 0.9);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -721,6 +721,24 @@ header #icons a:hover  {
     font-size: 18px;
     margin-top: 3%;
 }
+
+#projects #items-container .item:hover {
+    transition-duration: 0.2s;
+    background-color: var(--Brown);
+    cursor: pointer;
+}
+
+#projects #items-container a {
+    
+text-decoration: none;
+}
+
+#projects #items-container .item {
+    color: var(--White);
+    text-decoration: none;
+}
+
+
 
 #projects #nav_projects .hidden {
     position: absolute;

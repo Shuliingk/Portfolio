@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}   
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}   
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}   
+
+:root {
+    --White: #FFFFFF;
+    --GreenBackground: #9DA189;
+    --LightGreen: #AAA48F;
+    --DarkGreen: #626956;
+    --Brown: #82503E;
+    --DarBrown: #3B2A27;
+}
+
+
+body {
+    background-color: var(--GreenBackground);
+    color: var(--White);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 500; 
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+
+
+/** ------------------------------------------------ NAVBAR ------------------------------------------------ **/
+
+#navbar {
+    background-color: var(--Brown);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 1081px) {
+    #navbar {
+        padding-left: 10vw;
+        height: 110px;
+    }
+    
+    #navbar ul {
+        font-size: 32px;
+    }
+
+    #navbar .nav_numbers {
+        font-size: 18px;
+        text-align: right;
+        margin-bottom: -10px;
+        margin-right: -6px;
+    }
+
+    #content {
+        width: 60vw;
+        margin-left: 20vw;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #navbar {
+        height: 80px;
+        
+    }
+    
+    #navbar .nav_numbers {
+        font-size: 10px;
+        text-align: right;
+        margin-bottom: -6px;
+        margin-right: -6px;
+    }
+
+    #navbar ul {
+    font-size: 16px;
+    height: 100%;
+    }
+
+    #navbar ul div {
+        margin-top: -10px;
+    }
+
+    #content {
+        width: 90vw;
+        margin-top: 130px;
+        margin-left: 5vw;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    #navbar {
+        height: 80px;
+        
+    }
+    
+    #navbar .nav_numbers {
+        font-size: 8px;
+        text-align: right;
+        margin-bottom: -6px;
+        margin-right: -6px;
+    }
+
+    #navbar ul {
+    font-size: 12px;
+    height: 100%;
+    }
+
+    #navbar ul div {
+        margin-top: -10px;
+    }
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+
+
+#nav_element_2, #nav_element_3 {
+    margin-left: 100px;
+}
+
+#navbar ul div li a {
+    color: var(--White);
+    text-decoration: none;
+}
+#navbar ul div li a:hover {
+    transition-duration: 0.2s;
+    color: var(--LightGreen);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: var(--Brown);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/** ------------------------------------ Content  ------------------------------------ **/
+
+
+@media screen and (min-width: 1081px){
+    #content h1 {
+        font-size: 70px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    #content h2 {
+        font-weight: 500;
+        font-size: 35px;
+        text-align: center;
+    }        
+    #box {
+        width: 60vw;
+    }
+    #box div {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    #content h1 {
+        font-size: 60px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    #content h2 {
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+    }        
+    #box {
+        width: 90vw;
+    }
+
+    #box div {
+        width: 30vw;
+    }
+}
+
+#content #title {
+    display: flex;
+}
+
+#box {
+    margin-top: 50px;
+    background-color: var(--DarkGreen);
+    border-radius: 30px;
+    display:flex;
+    z-index: -100;
+}
+
+#box div {
+    text-align: center;
+}
+
+#box div .sub_category {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#box div .category_content {
+    font-size: 18px;
+}
+
+#content #title #image_icon img {
+    position: absolute;
+    margin-left: -65px;
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+    z-index: -50;
+}
+
+/** ------------------------------------ Part 1  ------------------------------------ **/
+
+#part_1 {
+    margin-top: 80px;
+    display: flex;
+}
+
+#part_1 #text {
+    width: 30vw;
+}
+
+#part_1 #image {
+    width: 30vw;
+    text-align: center;
+}
+#part_1 #image img, #part_1 #image video{
+    width: 300px;
+    height: auto;
+}
+
+#part_1 #image #desc{
+    font-size: 12px;
+}
+
+#part_1 #text #missions {
+    margin-top: 50px;
+}
+
+#part_1 #text #competences {
+    margin-top: 50px;
+}
+
+/** ------------------------------------ Part 2  ------------------------------------ **/
+
+#part_2 {
+    margin-top: 80px;
+    display: flex;  
+}
+
+#part_2 #text {
+    width: 30vw;
+}
+
+#part_2 #image {
+    width: 30vw;
+    text-align: center;
+}
+#part_2 #image img, #part_2 #image video{
+    width: 300px;
+    height: auto;
+}
+
+#part_2 #image #desc{
+    font-size: 12px;
+}
+
+#results {
+    margin-top: 50px;
+}
+
+#competences {
+    margin-top: 50px;
+}
+/** ------------------------------------ FOOTER  ------------------------------------ **/
+
+footer {
+    background-color: var(--Brown);
+    height: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+
+@media screen and (min-width: 1080px) {
+    footer #container {
+        display: flex;
+    }
+
+    
+    footer #container #notes p{
+        margin-top: -50px;
+    }
+    
+    footer #container div {
+    width: 34vw;
+    }
+}
+
+@media screen and (max-width: 1081px) {
+    footer #container #contact a, footer #container #contact p{
+        font-size: 20px;
+    }
+    footer #container #notes p{
+        margin-top: 50px;
+    }
+
+    footer #container #notes p{
+        font-size: 16px;
+    }
+}
+
+footer #container {
+    width: 80vw;
+    margin-left: 10vw;
+
+}
+
+footer #container div {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 24px;
+}
+
+footer h3 {
+    font-size: 42px;
+    margin-left: 13vw;
+}
+
+footer #container #contact a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+footer #container #contact a:hover {
+    color: var(--LightGreen);
+    transition-duration: 0.2s;
+}
+
+footer #copyright {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--DarBrown);
+}
+
+footer #copyright a{
+    text-decoration: none;
+    color: var(--LightGreen);
+}
