@@ -342,13 +342,11 @@ header #icons a:hover  {
         text-align: center;
     }
     #about_me #section_1 {
-        width: 90vw;
         margin-left: 5vw;
-
-    }
-    #about_me #section_1 #photo{
-        width: 90vw;
         text-align: center;
+    }
+    #about_me #section_1 #photo img{
+        width: 350px;
     }
 }
 
