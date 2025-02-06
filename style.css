@@ -264,6 +264,31 @@ header #icons a:hover  {
 
 }
 
+@media screen and (max-width: 520px) {
+    #navbar {
+        height: 80px;
+        
+    }
+    
+    #navbar .nav_numbers {
+        font-size: 8px;
+        text-align: right;
+        margin-bottom: -6px;
+        margin-right: -6px;
+    }
+
+    #navbar ul {
+    font-size: 12px;
+    height: 100%;
+    }
+
+    #navbar ul div {
+        margin-top: -10px;
+    }
+
+    
+
+}
 
 #navbar ul {
     display: flex;
