@@ -371,7 +371,7 @@ footer #copyright {
     color: var(--DarBrown);
 }
 
-footer #copyright a{
-    text-decoration: none;
+
+footer #copyright sub_p{
     color: var(--LightGreen);
 }

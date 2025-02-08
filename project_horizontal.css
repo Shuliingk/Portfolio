@@ -241,19 +241,29 @@ body {
 
 #part_1 {
     margin-top: 80px;
-    display: flex;
 }
 
 #part_1 #text {
-    width: 30vw;
+    display: flex;
+}
+
+#part_1 #text div
+{
+    width: 28vw;
+}
+
+
+#part_1 #text #missions
+{
+    margin-left: 4vw;
 }
 
 #part_1 #image {
-    width: 30vw;
+    margin-top: 50px;
     text-align: center;
 }
 #part_1 #image img, #part_1 #image video{
-    width: 300px;
+    width: 60vw;
     height: auto;
 }
 
@@ -261,31 +271,30 @@ body {
     font-size: 12px;
 }
 
-#part_1 #text #missions {
-    margin-top: 50px;
-}
-
-#part_1 #text #competences {
-    margin-top: 50px;
-}
-
 /** ------------------------------------ Part 2  ------------------------------------ **/
 
 #part_2 {
     margin-top: 80px;
-    display: flex;  
 }
 
 #part_2 #text {
-    width: 30vw;
+    display: flex;  
+}
+
+#part_2 #text div {
+    width: 28vw;
+}
+
+#part_2 #text #competences {
+    margin-left: 4vw;
 }
 
 #part_2 #image {
-    width: 30vw;
+    margin-top: 50px;
     text-align: center;
 }
 #part_2 #image img, #part_2 #image video{
-    width: 300px;
+    width: 60vw;
     height: auto;
 }
 
@@ -293,13 +302,6 @@ body {
     font-size: 12px;
 }
 
-#results {
-    margin-top: 50px;
-}
-
-#competences {
-    margin-top: 50px;
-}
 /** ------------------------------------ FOOTER  ------------------------------------ **/
 
 footer {
@@ -371,7 +373,6 @@ footer #copyright {
     color: var(--DarBrown);
 }
 
-footer #copyright a{
-    text-decoration: none;
+footer #copyright sub_p{
     color: var(--LightGreen);
 }
