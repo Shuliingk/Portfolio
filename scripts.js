@@ -51,7 +51,7 @@ window.addEventListener("scroll", () => {
 
 document.getElementById("CV_button").addEventListener("click", function () {
   const link = document.createElement("a");
-  link.href = "Art/cv.pdf"; // Remplace par le chemin réel de ton image
+  link.href = "Art/main/cv.pdf"; // Remplace par le chemin réel de ton image
   link.download = "CV_Timothé_Imbert.pdf"; // Nom du fichier téléchargé
   document.body.appendChild(link);
   link.click();

@@ -237,34 +237,47 @@ body {
     z-index: -50;
 }
 
+@media screen and (max-width: 1080px) {
+    #content #title #image_icon img {
+        display: none;
+    }
+
+}
+
 /** ------------------------------------ Part 1  ------------------------------------ **/
+@media screen and (min-width: 1080px) {
+    #part_1 #text {
+        display: flex;
+    }
+    #part_1 #text div
+    {
+        width: 28vw;
+    }
+    #part_1 #text #missions
+    {
+        margin-left: 4vw;
+    }
+
+    #part_1 #image img, #part_1 #image video{
+        width: 60vw;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width: 1080px) {
+    #part_1 #image img, #part_1 #image video{
+        width: 90vw;
+        height: auto;
+    }
+}
 
 #part_1 {
     margin-top: 80px;
 }
 
-#part_1 #text {
-    display: flex;
-}
-
-#part_1 #text div
-{
-    width: 28vw;
-}
-
-
-#part_1 #text #missions
-{
-    margin-left: 4vw;
-}
-
 #part_1 #image {
     margin-top: 50px;
     text-align: center;
-}
-#part_1 #image img, #part_1 #image video{
-    width: 60vw;
-    height: auto;
 }
 
 #part_1 #image #desc{
@@ -272,31 +285,39 @@ body {
 }
 
 /** ------------------------------------ Part 2  ------------------------------------ **/
+@media screen and (min-width: 1080px) {
+    #part_2 #text {
+        display: flex;  
+    }
 
+    #part_2 #text div {
+        width: 28vw;
+    }
+
+    #part_2 #text #competences {
+        margin-left: 4vw;
+    }
+
+    #part_2 #image img, #part_2 #image video{
+        width: 60vw;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1080px) {
+    #part_2 #image img, #part_2 #image video{
+        width: 90vw;
+        height: auto;
+    }
+}
 #part_2 {
     margin-top: 80px;
-}
-
-#part_2 #text {
-    display: flex;  
-}
-
-#part_2 #text div {
-    width: 28vw;
-}
-
-#part_2 #text #competences {
-    margin-left: 4vw;
 }
 
 #part_2 #image {
     margin-top: 50px;
     text-align: center;
 }
-#part_2 #image img, #part_2 #image video{
-    width: 60vw;
-    height: auto;
-}
+
 
 #part_2 #image #desc{
     font-size: 12px;
