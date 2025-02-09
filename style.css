@@ -766,8 +766,14 @@ footer {
     }
     
     footer #container div {
-    width: 34vw;
+        width: 34vw;
     }
+
+    footer h3 {
+        font-size: 42px;
+        margin-left: 13vw;
+    }
+
 }
 
 @media screen and (max-width: 1081px) {
@@ -780,6 +786,11 @@ footer {
 
     footer #container #notes p{
         font-size: 16px;
+    }
+
+    footer h3 {
+        font-size: 36px;
+        text-align: center;
     }
 }
 
@@ -797,11 +808,6 @@ footer #container div {
     margin-left: 2vw;
     margin-right: 2vw;
     font-size: 24px;
-}
-
-footer h3 {
-    font-size: 42px;
-    margin-left: 13vw;
 }
 
 footer #container #contact a {

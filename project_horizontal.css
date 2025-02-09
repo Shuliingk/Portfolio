@@ -39,7 +39,10 @@ body {
     font-size: 16px;
 }
 
-
+a {
+    color: var(--DarkGreen);
+    text-decoration: none;
+}
 
 /** ------------------------------------------------ NAVBAR ------------------------------------------------ **/
 
@@ -198,9 +201,11 @@ body {
         width: 90vw;
     }
 
+
     #box div {
         width: 30vw;
     }
+
 }
 
 #content #title {
@@ -262,13 +267,17 @@ body {
         width: 60vw;
         height: auto;
     }
-    
 }
 @media screen and (max-width: 1080px) {
     #part_1 #image img, #part_1 #image video{
         width: 90vw;
         height: auto;
     }
+}
+
+#part_1 h3 {
+    color: var(--DarkGreen);
+    font-size: 26px;
 }
 
 #part_1 {
@@ -309,6 +318,12 @@ body {
         height: auto;
     }
 }
+
+#part_2 h3 {
+    color: var(--DarkGreen);
+    font-size: 26px;
+}
+
 #part_2 {
     margin-top: 80px;
 }
@@ -346,6 +361,12 @@ footer {
     footer #container div {
     width: 34vw;
     }
+
+    footer h3 {
+        font-size: 42px;
+        margin-left: 13vw;
+    }
+
 }
 
 @media screen and (max-width: 1081px) {
@@ -358,6 +379,11 @@ footer {
 
     footer #container #notes p{
         font-size: 16px;
+    }
+    
+    footer h3 {
+        font-size: 36px;
+        text-align: center;
     }
 }
 
@@ -372,12 +398,6 @@ footer #container div {
     margin-right: 2vw;
     font-size: 24px;
 }
-
-footer h3 {
-    font-size: 42px;
-    margin-left: 13vw;
-}
-
 footer #container #contact a {
     color: var(--White);
     text-decoration: none;
