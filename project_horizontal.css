@@ -179,6 +179,7 @@ a {
     }        
     #box {
         width: 60vw;
+        display: flex;
     }
     #box div {
         width: 20vw;
@@ -203,7 +204,7 @@ a {
 
 
     #box div {
-        width: 30vw;
+        width: 90vw;
     }
 
 }
@@ -216,7 +217,6 @@ a {
     margin-top: 50px;
     background-color: var(--DarkGreen);
     border-radius: 30px;
-    display:flex;
     z-index: -100;
 }
 
