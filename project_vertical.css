@@ -438,3 +438,9 @@ footer #copyright {
 footer #copyright sub_p{
     color: var(--LightGreen);
 }
+
+
+#link {
+    text-align: center;
+    margin-top: 100px;
+}
