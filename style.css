@@ -164,17 +164,17 @@ header #icons {
 
 header #icons a {
     margin-right: 35px;
-    
 }
 
 header #icons a img{
     width: 100px;
 } 
 
-header #icons #github{
-    margin-bottom: 60px;
-}
 header #icons #linkedin{
+    margin-bottom:  35px;
+}
+
+header #icons #itch{
     margin-bottom: 150px;
 }
 
